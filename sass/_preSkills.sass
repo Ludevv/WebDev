@@ -1,0 +1,101 @@
+div.preSkills
+    position: relative
+    top: 100vh
+    left: 0
+    z-index: 1
+    height: 100vh
+    background-color: #11121f
+    box-shadow: 0 -50px  45px rgba(0,0,0,0.6)
+    // overflow: hidden
+
+
+    section
+        height: 115%
+        width: 100%
+        span.textComing1, span.textComing2
+            position: absolute
+            top: 50%
+            left: 50%
+            
+            text-transform: uppercase
+            font-size: 7vw
+            font-family: 'Bungee Shade', cursive;
+            color: rgb(216, 216, 216)
+            letter-spacing: 25px
+
+        span.textComing1
+            transform: translate(-500%, -50%) 
+
+
+        span.textComing2
+            transform: translate(90%, -50%) 
+
+        span.textComing1.animate
+            animation: text1 1s forwards
+
+            @keyframes text1
+                0%
+                    transform: translate(-500%, -50%) 
+                100%
+                    transform: translate(-290%, -50%) 
+
+
+
+        span.textComing2.animate
+            animation: text2 1s forwards
+
+            @keyframes text2
+                0%
+                    transform: translate(90%, -50%) 
+                100%
+                    transform: translate(-35%, -50%)
+
+
+
+
+    img.wave
+        width: 130%
+        position: absolute
+        left: 0%
+        top: 100%
+
+    img.wave.run 
+        animation: waveRun 2s forwards
+
+        @keyframes waveRun
+            100%
+                left: -30%
+
+
+
+    @media (max-width: 880px)
+        section
+            span.textComing1, span.textComing2
+                letter-spacing: 20px
+
+    @media (max-width: 700px)
+        section
+            span.textComing1, span.textComing2
+                letter-spacing: 15px
+
+    @media (max-width: 600px)
+        section
+            span.textComing1, span.textComing2
+                letter-spacing: 10px
+
+    @media (max-width: 500px)
+        section
+            span.textComing1, span.textComing2
+                letter-spacing: 8px
+
+    @media (max-width: 380px)
+        section
+            span.textComing1, span.textComing2
+                letter-spacing: 5px
+                font-size: 2rem
+
+    @media (max-width: 320px)
+        section
+            span.textComing1, span.textComing2
+                letter-spacing: 2px
+                font-size: 2rem

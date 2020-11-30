@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludevv - FrontEnd</title>
+    <script src="https://kit.fontawesome.com/75464f82e1.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fa.png">
+    <link href="dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="wrap">
+
+
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a class="origin" href="#">Początek</a></li>
+                    <li><a class="abilities" href="#">Umiejętności</a></li>
+                    <li><a class="work" href="#">Praca</a></li>
+                    <li><a class="programmer" href="#">Programowanie</a></li>
+                    <li><a class="aboutMyLife" href="#">O mnie</a></li>
+                    <li><a class="form" href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="eng">
+                <img src="img/eng.png" alt="flaga Wielkiej Brytanii">
+            </div>
+            <div class="pl">
+                <img src="img/pol.png" alt="flaga Polski">
+            </div>
+        </aside>
+
+
+        <header>
+            <div class="typing" data-section="origin">
+                <p><span class="colorPurple">let</span> boxName <span class="colorTurquoise">=</span> document.<span
+                        class="colorBlue">querySelector</span> (<span class="colorGreen">'.myName'</span>);</p>
+                <p class="space"><span class="colorPurple">let</span> boxJob <span class="colorTurquoise">=</span>
+                    document.<span class="colorBlue">querySelector</span> (<span class="colorGreen">'.myJob'</span>);
+                </p>
+                <p><span class="colorPurple">const</span> <span class="colorOrange">name</span> <span
+                        class="colorTurquoise">=</span> <span class="colorGreen">'Piotr Ludew'</span>;</p>
+                <p class="space"><span class="colorPurple">const</span> <span class="colorOrange">job</span> <span
+                        class="colorTurquoise">=</span> <span class="colorGreen">'Front-End Developer'</span>;</p>
+                <p><span class="colorPurple">function</span> <span class="colorBlue">welcome</span>() {</p>
+                <p>boxName.<span class="colorRed">textContent</span> <span class="colorTurquoise">=</span> name;</p>
+                <p>boxJob.<span class="colorRed">textContent</span> <span class="colorTurquoise">=</span> job;</p>
+                <p class="space">};</p>
+                <p><span class="colorBlue">welcome</span>();</p>
+            </div>
+
+            <img class="photo" src="img/1.png" alt="">
+
+            <section>
+                <div><span class="hey">Witaj! Nazywam się </span><span class="myName">undefined</span></div>
+                <div><span class="front">i chcę pracować jako </span><span class="myJob">undefined</span></div>
+            </section>
+        </header>
+
+
+        <div class="preSkills">
+            <section>
+                <span class="textComing1">co</span><span class="textComing2"> potrafię?</span>
+                <img src="img/2.png" class="wave">
+            </section>
+        </div>
+
+
+        <main class="skills" data-section="abilities">
+            <div class="html1">
+                <div class="container1">
+                    <div class="card1">
+                        <div class="html">
+                            <div class="circle"></div>
+                            <img src="img/html5.png" alt="html5">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">HTML5</h1>
+                            <h3 class="advanced1">Poziom zaawansowania</h3>
+                            <div class="circles">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                                <div class="four"></div>
+                                <div class="five"></div>
+                            </div>
+                            <h4 class="pro1">Zaawansowany</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="css1">
+                <div class="container2">
+                    <div class="card2">
+                        <div class="css">
+                            <div class="circle"></div>
+                            <img src="img/css3.png" alt="css3">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">CSS3</h1>
+                            <h3 class="advanced2">Poziom zaawansowania</h3>
+                            <div class="circles">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                                <div class="four"></div>
+                                <div class="five"></div>
+                            </div>
+                            <h4>Regular</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="js1">
+                <div class="container3">
+                    <div class="card3">
+                        <div class="js">
+                            <div class="circle"></div>
+                            <img src="img/js.png" alt="js">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">JavaScript</h1>
+                            <h3 class="advanced3">Poziom zaawansowania</h3>
+                            <div class="circles">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                                <div class="four"></div>
+                                <div class="five"></div>
+                            </div>
+                            <h4>Junior</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="react1">
+                <div class="container4">
+                    <div class="card4">
+                        <div class="react">
+                            <div class="circle"></div>
+                            <img src="img/react.png" alt="react">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">React</h1>
+                            <h3 class="advanced4">Poziom zaawansowania</h3>
+                            <div class="circles">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                                <div class="four"></div>
+                                <div class="five"></div>
+                            </div>
+                            <h4>Junior</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jquery1">
+                <div class="container5">
+                    <div class="card5">
+                        <div class="jquery">
+                            <div class="circle"></div>
+                            <img src="img/jquery.png" alt="jquery">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">JQuerry</h1>
+                            <h3 class="advanced5">Poziom zaawansowania</h3>
+                            <div class="circles">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                                <div class="four"></div>
+                                <div class="five"></div>
+                            </div>
+                            <h4>Regular</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sass1">
+                <div class="container6">
+                    <div class="card6">
+                        <div class="sass">
+                            <div class="circle"></div>
+                            <img src="img/sass1.png" alt="sass">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">SASS</h1>
+                            <h3 class="advanced6">Poziom zaawansowania</h3>
+                            <div class="circles">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                                <div class="four"></div>
+                                <div class="five"></div>
+                            </div>
+                            <h4 class="pro6">Zaawansowany</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="python1">
+                <div class="container7">
+                    <div class="card7">
+                        <div class="python">
+                            <div class="circle"></div>
+                            <img src="img/python.png" alt="python">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">Python</h1>
+                            <h3 class="advanced7">Poziom zaawansowania</h3>
+                            <div class="circles">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                                <div class="four"></div>
+                                <div class="five"></div>
+                            </div>
+                            <h4>Junior</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="github1">
+                <div class="container8">
+                    <div class="card8">
+                        <div class="github">
+                            <div class="circle"></div>
+                            <img src="img/github.png" alt="github">
+                        </div>
+                        <div class="info">
+                            <h1 class="title">GIT</h1>
+                            <h3 class="advanced8">Poziom zaawansowania</h3>
+                            <div class="circles">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                                <div class="four"></div>
+                                <div class="five"></div>
+                            </div>
+                            <h4>Regular</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <article class="about clearfix" data-section="work">
+            <h2 class="headerAbout">troszkę o mojej pracy...</h2>
+            <div class="bgc"></div>
+            <p class="pAbout">
+                Jako programista przemysłowy, zajmuję się tworzeniem oprogramowania dla robotów, linii przemysłowych
+                oraz systemów wizyjnych w pięcoosobywm zespole. Moim codziennym zadaniem jest odnajdywanie się w różnych środowiskach
+                programistycznych i językach programowania, co wymaga wysokich zdolności analitycznego i
+                programistycznego sposobu myślenia. Jak wiadomo elementem pracy programisty jest ciągła styczność z
+                dokumentacją, także w innych językach np. włoskim. W pracy często wykorzystuję Pythona do automatyzacji
+                zadań, czy tworzenia komunikacji po protokole TCP/IP. Rozpoczęcie pracy zawodowej zaraz po ukończeniu
+                studiów z wynikiem celującym oraz samodzielne doszkalanie się dały mi możliwość intensywnego rozwoju. W zaledwie półtora roku
+                otrzymałem tytuł młodszego specjalisty i powierzono mi prowadzenie projektów w dużym koncernie
+                spożywczym. Moja obecna praca sprowadza się do dużej ilości wyjazdów, dlatego przy podjęciu nowej zależy
+                mi, aby była ona stacjonarna.
+            </p>
+        </article>
+
+
+        <div class="youtube">
+            <div class="preYt">
+                <h3 class="h3YouTube">Co robię w praktyce?</h3>
+            </div>
+            <div class="video">
+                <div class="small">
+                    <iframe src="https://www.youtube.com/embed/05KdcedIgao?controls=0&amp;start=9&mute=1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <article class="about2 clearfix" data-section="programmer">
+            <h2 class="headerAbout2">pasja programowania...</h2>
+            <div class="bgc2"></div>
+            <p class="pAbout2">
+                Idea mojej pracy wbrew pozorom jest bardzo powiązana ze światem IT, dlatego też zadecydowałem o
+                przebranżowieniu na Front-End Developera. Programowanie jest moją pasją, w której najbardziej lubię, gdy
+                moja głowa każdego dnia „pali się” nad rozwiązaniem danego problemu. Od roku intensywnie pracuję nad
+                nauką JavaScript i React, która podyktowana była potrzebą pisania oprogramowania na roboty
+                współpracujące HCR oraz systemy
+                wizyjne firmy COGNEX.
+                Mam za sobą dużą ilość kursów HTML, CSS, co sprawia, że czuję się mocny w tych technologiach i nie
+                straszna mi kaskadowość. Ponadto, stosuję responsywne tworzenie stron, oraz ideę mobile-first. Dzięki
+                odpowiedniemu przygotowaniu uważam, że nadeszła pora, aby zająć się programowaniem komercyjnie. Jeśli
+                dacie mi Państwo szansę, to obiecuję, że bardzo szybko stanę się samodzielnym, wykwalifikowanym
+                pracownikiem. Jestem osobą, która szybko przyswaja wiedzę i umie wykorzystać ją w praktyce.
+            </p>
+        </article>
+
+
+        <article class="gallery" data-section="aboutMyLife">
+            <h3 class="headerAbout3">... i o mnie</h3>
+            <div class="photo">
+                <div class="reSize">
+                    <a href="img/p1.jpg" data-lightbox="image-1"><img src="img/p1.jpg" alt="student"
+                            data-lightbox="image-1" class="foto1"></a>
+                    <a href="img/p2.JPG" data-lightbox="image-1"><img src="img/p2.jpg" alt="student"
+                            data-lightbox="image-1" class="foto2"></a>
+                    <a href="img/p3.JPG" data-lightbox="image-1"><img src="img/p3.jpg" alt="student"
+                            data-lightbox="image-1" class="foto3"></a>
+                    <a href="img/p4.JPG" data-lightbox="image-1"><img src="img/p4.jpg" alt="student"
+                            data-lightbox="image-1" class="foto4"></a>
+                    <a href="img/p5.JPG" data-lightbox="image-1"><img src="img/p5.jpg" alt="student" class="foto5"></a>
+                </div>
+                <div class="selector">
+                    <div class="first"></div>
+                    <div class="second"></div>
+                    <div class="third"></div>
+                    <div class="fourth"></div>
+                    <div class="fifth"></div>
+                </div>
+            </div>
+            <h4 class="h4About3">Z natury jestem otwartym i wesołym człowiekiem. Moją największą zaletą jest pracowitość i dążenie do
+                postawionego sobie celu. Wiąże się to jednak z moją największą wadą, jaką jest upartość. W wolnych
+                chwilach, oprócz programowania, lubię grać na konsoli, oglądać mecze, filmy i seriale. Dbam również o
+                aktywność fizyczną, gdy sprzyja pogoda śmigam na rolkach, czy gram w piłkę nożną z przyjaciółmi.</h4>
+            <div class="cursor">
+                <img src="img/cursor.png" alt="kursor">
+            </div>
+        </article>
+
+
+        <article class="checkPhone clearfix">
+            <h3 class="textPhone">Koniecznie sprawdź moją stronę na swoim smartfonie!</h3>
+            <div class="mSite">
+                <img src="img/iphonex2.png" alt="telefon" class="iphone">
+            </div>
+        </article>
+
+
+        <section class="fix" data-section="form">
+            <section class="contact">
+                <h1 class="hContact">Kontakt</h1>
+                <div class="block clearfix">
+                    <form action="">
+                        <input type="text" placeholder="Twoję imię..." >
+                        <input type="text" placeholder="E-Mail..." >
+                        <textarea placeholder="Twoja wiadomość..." ></textarea>
+                        <button class="sendMessage">Wyślij wiadomość</button>
+                    </form>
+                    <div class="socials">
+                        <div class="social clearfix">
+                            <i class="fas fa-mobile"></i><span>+48 698 538 440</span>
+                        </div>
+                        <div class="social clearfix">
+                            <i class="fas fa-envelope"></i><span>piotrek.ludew@gmail.com</span>
+                        </div>
+                        <div class="social clearfix">
+                            <i class="fab fa-facebook-messenger"></i><span>piotr.ludew3</span>
+                        </div>
+                        <div class="social clearfix">
+                            <i class="fab fa-linkedin"></i><span>Piotr Ludew</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <footer>
+            <p> &copy; Piotr Ludew 2020</p>
+        </footer>
+
+
+        <div class="callme">
+            <img src="img/meclick.png" alt="telefon" class="click">
+            <span>+48 698 538 440</span>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="dist/js/lightbox.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/scriptMovingCards.js"></script>
+</body>
+
+</html>

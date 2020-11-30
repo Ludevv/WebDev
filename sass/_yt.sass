@@ -1,0 +1,124 @@
+
+
+
+div.youtube
+    position: relative
+    background-color: transparent
+    height: 40vw
+    width: 100%
+
+    div.preYt
+        background: #11121f
+        height: 10%
+        width: 0%
+        h3
+            text-align: left
+            padding: 10% 3% 3% 3%
+            color: #fff
+            font-size: 5vw
+            letter-spacing: 3px
+            opacity: 0
+            text-transform: uppercase
+            font-family: 'Big Shoulders Stencil Display', cursive;
+
+
+
+    div.video
+        position: absolute
+        top: 50%
+        right: 2vw
+        transform: translateY(-50%)
+        width: 60%
+
+
+
+
+
+        div.small
+            position: relative
+            top
+            height: 0
+            padding-bottom: 56.25%
+            padding-top: 25px
+            iframe
+                position: absolute
+                left: 0
+                top: 0
+                right: 0
+                bottom: 0
+                height: 100%
+                width: 100%
+                opacity: 0
+
+            
+
+
+    div.preYt.animate5
+        animation: rig 2s forwards
+        @keyframes rig
+            0%
+                
+            100%
+                width: 100%
+        
+
+    div.preYt.animate6
+        animation: rig 1s forwards, bot 1s forwards
+        h3
+            animation: h3show 1s 1s forwards
+    div.video.animate6
+        div.small
+            iframe
+                animation: h3show 1s 1s forwards
+
+
+    @keyframes bot
+        0%
+            height: 10%
+        100%
+            height: 40vw
+
+    @keyframes h3show
+        0%
+            opacity: 0
+        100%
+            opacity: 1
+
+
+
+
+    
+                
+
+
+
+
+    
+    @media (max-width: 1300px)
+        
+
+        animation: rig 1s forwards, bot 1s forwards
+        div.preYt
+            
+            h3
+                font-size: 5vw
+                text-align: center
+                padding: 3%
+        div.video
+            top: 17%
+            right: 50%
+            transform: translateX(50%)
+            width: 90%
+        
+        @keyframes bot
+            0%
+                height: 10%
+            100%
+                height: 70vw
+
+    @media (max-width: 414px)
+        div.preYt
+            h3
+                font-size: 2rem
+                padding: 3%
+

@@ -1,0 +1,190 @@
+article.gallery
+    min-height: 100vh
+    width: 100%;
+    background-color: rgb(110, 118, 137)
+    position: relative;
+    transition: 1s
+    overflow: hidden
+    h3
+        padding: 4% 7% 2% 5%
+        line-height: 1.2
+        font-family: 'Abril Fatface', cursive;
+        font-size: 3.5vw
+        text-align: right
+        color: white
+        text-transform: uppercase
+
+    div.photo
+        position: absolute
+        top: 13vw;
+        left: 5vw;
+        width: 30%;
+        div.reSize
+            overflow: hidden
+            
+            img.foto1
+                width: 100%
+                transition: .5s
+                animation: color 4s linear infinite;
+
+                @keyframes color 
+                    0% 
+                        opacity: 0;
+                    8% 
+                        opacity: 0;
+                    18% 
+                        opacity: 1;
+                    82% 
+                        opacity: 1;
+                    92% 
+                        opacity: 0
+                    100% 
+                        opacity: 0;
+            img.foto1:hover
+                transform: scale(1.15)
+                filter: blur(1px)
+
+            
+
+            img.foto2
+                display: none
+            img.foto3
+                display: none
+            img.foto4
+                display: none
+            img.foto5
+                display: none
+        
+        div.selector
+            position: absolute
+            bottom: -8%
+            left: 48%
+            transform: translateX(-50%)
+            width: 40%
+            display: flex
+            justify-content: space-between
+            div
+                width: 1.5rem
+                height: 1.5rem
+                background-color: rgba(150,150,150,0.7)
+                border-radius: 50%
+                opacity: 0.7
+                
+            div.first
+                animation: point 20s forwards infinite
+            div.second
+                animation: point 20s 4s forwards infinite
+            div.third
+                animation: point 20s 8s forwards infinite
+            div.fourth 
+                animation: point 20s 12s forwards infinite
+            div.fifth
+                animation: point 20s 16s forwards infinite
+
+            @keyframes point
+                0%
+                    background-color: rgba(150,150,150,0.7)
+                    border: none
+                1%
+                    background-color: rgba(150,150,150,0.7)
+                    border: none
+                2%
+                    background-color: rgba(50,50,50,1)
+                    border: 0.2rem solid rgba(150,150,150,0.7)
+                18%
+                    background-color: rgba(50,50,50,1)
+                    border: 0.2rem solid rgba(150,150,150,0.7)
+                19%
+                    background-color: rgba(150,150,150,0.7)
+                20%
+                    background-color: rgba(150,150,150,0.7)
+                    border: none
+                100%
+                    background-color: rgba(150,150,150,0.7)
+
+    h4
+        padding: 2% 7% 0% 41%
+        font-family: 'Poppins', sans-serif;
+        text-align: justify
+        color: white
+        font-size: 1.6rem
+        line-height: 2.1
+        font-weight: normal
+
+    div.cursor
+        position: absolute
+        bottom: -30%
+        left: 50%
+        height: 30vh
+        // background-color: #000
+        width: 170px
+        overflow: hidden
+        animation: cursorRun 4s infinite
+        img
+            height: 100%
+
+
+        @keyframes cursorRun
+            0%
+                bottom: -30%
+                left: 50%
+            25%
+                bottom: 5%
+
+            50%
+                bottom: 0
+                left: 30%    
+
+    @media (max-width: 1900px)
+        div.cursor
+            animation: none
+
+
+    @media (max-width: 1125px)
+        div.photo
+            position: relative
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 60%;
+            padding: 5% 0 0 0
+        h4
+            padding: 7% 6% 2% 6%
+
+
+    @media (max-width: 700px)
+        h3
+            font-size: 3rem
+        div.photo
+            position: relative
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 70%;
+            padding: 5% 0 0 0
+        h4
+            padding: 7% 6% 2% 6%
+            font-size: 1.3rem
+
+    @media (max-width: 500px)
+        h3
+            font-size: 3rem
+        div.photo
+            position: relative
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 90%;
+            padding: 5% 0 0 0
+        h4
+            padding: 9% 6% 2% 6%
+            font-size: 1rem
+
+
+
+
+        
+
+
+
+    
