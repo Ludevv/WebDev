@@ -21,7 +21,7 @@ header
 
         @keyframes movePicture
             0%
-                transform: scale(1.5)  
+                transform: scale(1.5)
             100%
                 right: -4%
                 bottom: -40%
@@ -33,22 +33,22 @@ header
             100%
                 transform: scale(1.1)
         // Koniec wlatującego zdjęcia
-        
+
         // Wlatujący tekst środkowy
     section
         display: inline-block
-        font-family: 'Covered By Your Grace', cursive;
+        font-family: 'Covered By Your Grace', cursive
         font-size: 80px
         position: absolute
         bottom: 105%
         left: 3%
         animation: moveText 1.2s 1s ease-in forwards
-        
+
         span.hey
-            font-family: 'Covered By Your Grace', cursive;
+            font-family: 'Covered By Your Grace', cursive
             font-size: 80px
         span.front
-            font-family: 'Covered By Your Grace', cursive;
+            font-family: 'Covered By Your Grace', cursive
             font-size: 80px
         span
             font-family: consolas, sans-serif
@@ -56,7 +56,7 @@ header
             font-style: italic
             transition: 2s
         span.showVariables
-            font-family: 'Covered By Your Grace', cursive;
+            font-family: 'Covered By Your Grace', cursive
             font-size: 80px
             font-style: normal
 
@@ -70,24 +70,18 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 6%
 
-
-
-                
         // Koniec wlatującego tekstu środkowego
-
-
-
 
         // TYPPING KOD JS        
     div.typing
@@ -101,7 +95,7 @@ header
             margin: 5px
             font-size: 30px
             overflow: hidden
-        p::after 
+        p::after
             position: absolute
             top: 0
             left: 0
@@ -119,23 +113,23 @@ header
         //         text-indent: 90px
 
         p:nth-of-type(1):after
-            animation: cursor .5s 1.5s infinite linear, typing .7s 1.5s steps(49) 1 both 
+            animation: cursor .5s 1.5s infinite linear, typing .7s 1.5s steps(51) 1 both
         p:nth-of-type(2):after
-            animation: cursor .5s 2.2s infinite linear, typing .7s 2.2s steps(47) 1 both
+            animation: cursor .5s 2.2s infinite linear, typing .7s 2.2s steps(49) 1 both
         p:nth-of-type(3):after
-            animation: cursor .5s 2.9s infinite linear, typing .4s 2.9s steps(27) 1 both                
+            animation: cursor .5s 2.9s infinite linear, typing .4s 2.9s steps(25) 1 both
         p:nth-of-type(4):after
-            animation: cursor .5s 3.2s infinite linear, typing .4s 3.2s steps(34) 1 both                
+            animation: cursor .5s 3.2s infinite linear, typing .4s 3.2s steps(32) 1 both
         p:nth-of-type(5):after
             animation: cursor .5s 3.7s infinite linear, typing .2s 3.7s steps(20) 1 both
         p:nth-of-type(6):after
-            animation: cursor .5s 3.9s infinite linear, typing .4s 3.9s steps(32) 1 both                   
+            animation: cursor .5s 3.9s infinite linear, typing .4s 3.9s steps(32) 1 both
         p:nth-of-type(7):after
-            animation: cursor .5s 4.3s infinite linear, typing .4s 4.3s steps(30) 1 both                   
+            animation: cursor .5s 4.3s infinite linear, typing .4s 4.3s steps(30) 1 both
         p:nth-of-type(8):after
             animation: cursor .5s 4.7s infinite linear, typing .4s 4.7s steps(2) 1 both
         p:nth-of-type(9):after
-            animation: cursor .5s 5.1s infinite linear, typing .15s 5.1s steps(10) 1 both    
+            animation: cursor .5s 5.1s infinite linear, typing .15s 5.1s steps(10) 1 both
 
         .space
             margin-bottom: 2%
@@ -153,27 +147,27 @@ header
         .colorRed
             color: rgb(240, 96, 96)
 
-        @keyframes cursor 
-            0% 
+        @keyframes cursor
+            0%
                 border-color: transparent
-            10% 
+            10%
                 border-color: transparent
-            25% 
+            25%
                 border-color: rgb(216, 216, 216)
-            75% 
+            75%
                 border-color: rgb(216, 216, 216)
-            90% 
-                border-color: rgb(216, 216, 216) 
+            90%
+                border-color: rgb(216, 216, 216)
             100%
                 border-color: transparent
 
         @keyframes typing
             100%
                 left: 100%
-                    
+
         // KONIEC TYPPING KOD
 
-    @media (max-width: 1580px) 
+    @media (max-width: 1580px)
         section
             font-size: 55px
             bottom: 105%
@@ -191,22 +185,21 @@ header
         img.photo
             right: 100%
             bottom: 0%
-            height: 100vh   
-        
+            height: 100vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: -4%
                     bottom: -10%
                     transform: scale(0.95)
 
-    @media (max-width: 1260px) 
+    @media (max-width: 1260px)
         img.photo
             height: 85vh
 
-
-    @media (max-width: 1023px) 
+    @media (max-width: 1023px)
         section
             font-size: 45px
             bottom: 105%
@@ -224,18 +217,15 @@ header
             p
                 font-size: 20px
 
-
-
-
             // Wlatujące zdjęcie 
         img.photo
             right: 100%
             bottom: 0%
-            height: 95vh   
-        
+            height: 95vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: -10%
                     bottom: -15%
@@ -247,7 +237,7 @@ header
                 font-size: 25px
                 font-weight: bold
 
-    @media (max-width: 760px) 
+    @media (max-width: 760px)
         section
             font-size: 38px
             bottom: 105%
@@ -264,9 +254,9 @@ header
         img.photo
             right: 100%
             bottom: 0%
-            height: 85vh 
+            height: 85vh
 
-    @media (max-width: 650px) 
+    @media (max-width: 650px)
         section
             font-size: 33px
             bottom: 105%
@@ -285,22 +275,21 @@ header
                 font-size: 18px
                 font-weight: bold
 
-
             // Wlatujące zdjęcie 
         img.photo
             right: 100%
             bottom: 0%
-            height: 95vh   
-        
+            height: 95vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: -15%
                     bottom: -25%
                     transform: scale(0.95)
 
-    @media (max-width: 600px) 
+    @media (max-width: 600px)
         section
             font-size: 31px
             bottom: 105%
@@ -315,7 +304,6 @@ header
             span.showVariables
                 font-size: 31px
 
-
         div.typing
             margin: 10% 0 0 -7%
             p
@@ -326,25 +314,21 @@ header
             .space
                 margin-bottom: 3%
 
-
-
             // Wlatujące zdjęcie 
         img.photo
             right: 100%
             bottom: 0%
-            height: 85vh   
-        
+            height: 85vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: -25%
                     bottom: -20%
                     transform: scale(0.95)
 
-
-
-    @media (max-width: 520px) 
+    @media (max-width: 520px)
         section
             font-size: 23px
             bottom: 105%
@@ -369,20 +353,19 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 7%
 
-
         div.typing
-            margin: 12% 0 0 -10%
+            margin: 12% 0 0 -12%
             p
                 font-size: 13px
                 font-weight: bold
@@ -391,23 +374,19 @@ header
             .space
                 margin-bottom: 3%
 
-
-
             // Wlatujące zdjęcie 
         img.photo
             right: 100%
             bottom: 0%
-            height: 85vh   
-        
+            height: 85vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: -26%
                     bottom: -21%
                     transform: scale(0.95)
-
-
 
     @media (max-width: 813px) and (orientation: landscape)
         section
@@ -434,17 +413,16 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 12%
-
 
         div.typing
             margin: -2% 0 0 -2%
@@ -456,23 +434,19 @@ header
             .space
                 margin-bottom: 2.5%
 
-
-
             // Wlatujące zdjęcie 
         img.photo
             right: 100%
             bottom: 0%
-            height: 110vh   
-        
+            height: 110vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: 0%
                     bottom: -20%
                     transform: scale(0.95)
-
-
 
     @media (max-width: 667px) and (orientation: landscape)
         section
@@ -484,7 +458,7 @@ header
             span.front
                 font-size: 23px
 
-    @media (max-width: 360px) 
+    @media (max-width: 360px)
         section
             font-size: 19px
             bottom: 105%
@@ -509,17 +483,16 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 10%
-
 
         div.typing
             margin: 12% 0 0 -10%
@@ -531,27 +504,23 @@ header
             .space
                 margin-bottom: 3%
 
-
-
             // Wlatujące zdjęcie 
         img.photo
             right: 100%
             bottom: 0%
-            height: 85vh   
-        
+            height: 85vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: -30%
                     bottom: -17%
                     transform: scale(0.95)
 
-
-
-    @media (max-width: 320px) 
+    @media (max-width: 320px)
         section
-            font-size: 19px
+            font-size: 18px
             bottom: 105%
             left: 3%
             div
@@ -574,20 +543,19 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 10%
 
-
         div.typing
-            margin: 12% 0 0 -10%
+            margin: 12% 0 0 -14%
             p
                 font-size: 11px
                 font-weight: bold
@@ -596,25 +564,21 @@ header
             .space
                 margin-bottom: 3%
 
-
-
             // Wlatujące zdjęcie 
         img.photo
             right: 100%
             bottom: 0%
-            height: 85vh   
-        
+            height: 85vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: -34%
                     bottom: -17%
                     transform: scale(0.95)
 
-
-
-    @media (max-width: 300px) 
+    @media (max-width: 300px)
         section
             font-size: 16px
             bottom: 105%
@@ -639,17 +603,16 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 10%
-
 
         div.typing
             margin: 12% 0 0 -10%
@@ -661,17 +624,15 @@ header
             .space
                 margin-bottom: 3%
 
-
-
             // Wlatujące zdjęcie 
         img.photo
             right: 100%
             bottom: 0%
-            height: 85vh   
-        
+            height: 85vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: -45%
                     bottom: -17%
@@ -680,7 +641,6 @@ header
     @media (max-width: 823px) and (orientation: landscape)
         section
             bottom: 105%
-
 
             font-size: 25px
             left: 30%
@@ -694,7 +654,6 @@ header
             span.showVariables
                 font-size: 25px
 
-
         @keyframes moveText
             0%
             60%
@@ -705,24 +664,24 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 14%
         img.photo
             right: 100%
             bottom: 0%
-            height: 120vh   
-        
+            height: 120vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: 0%
                     bottom: -17%
@@ -758,24 +717,24 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 15%
         img.photo
             right: 100%
             bottom: 0%
-            height: 120vh   
-        
+            height: 120vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: 0%
                     bottom: -17%
@@ -791,13 +750,11 @@ header
             .space
                 margin-bottom: 2%
 
-
-
     @media (max-width: 568px) and (orientation: landscape)
         section
             font-size: 23px
             bottom: 105%
-            left: 35%0
+            left: 35%
             span.hey
                 font-size: 23px
             span.front
@@ -813,24 +770,24 @@ header
                 bottom: 10%
             72%
                 bottom: 10%
-            80% 
+            80%
                 bottom: 3%
-            82% 
+            82%
                 bottom: 3%
-            90% 
+            90%
                 bottom: 9%
-            92% 
+            92%
                 bottom: 9%
             100%
                 bottom: 15%
         img.photo
             right: 100%
             bottom: 0%
-            height: 120vh   
-        
+            height: 120vh
+
             @keyframes movePicture
                 0%
-                    transform: scale(1.5)  
+                    transform: scale(1.5)
                 100%
                     right: 0%
                     bottom: -17%

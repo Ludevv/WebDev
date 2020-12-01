@@ -483,23 +483,23 @@ header div.typing p::after {
 }
 
 header div.typing p:nth-of-type(1):after {
-  -webkit-animation: cursor 0.5s 1.5s infinite linear, typing 0.7s 1.5s steps(49) 1 both;
-          animation: cursor 0.5s 1.5s infinite linear, typing 0.7s 1.5s steps(49) 1 both;
+  -webkit-animation: cursor 0.5s 1.5s infinite linear, typing 0.7s 1.5s steps(51) 1 both;
+          animation: cursor 0.5s 1.5s infinite linear, typing 0.7s 1.5s steps(51) 1 both;
 }
 
 header div.typing p:nth-of-type(2):after {
-  -webkit-animation: cursor 0.5s 2.2s infinite linear, typing 0.7s 2.2s steps(47) 1 both;
-          animation: cursor 0.5s 2.2s infinite linear, typing 0.7s 2.2s steps(47) 1 both;
+  -webkit-animation: cursor 0.5s 2.2s infinite linear, typing 0.7s 2.2s steps(49) 1 both;
+          animation: cursor 0.5s 2.2s infinite linear, typing 0.7s 2.2s steps(49) 1 both;
 }
 
 header div.typing p:nth-of-type(3):after {
-  -webkit-animation: cursor 0.5s 2.9s infinite linear, typing 0.4s 2.9s steps(27) 1 both;
-          animation: cursor 0.5s 2.9s infinite linear, typing 0.4s 2.9s steps(27) 1 both;
+  -webkit-animation: cursor 0.5s 2.9s infinite linear, typing 0.4s 2.9s steps(25) 1 both;
+          animation: cursor 0.5s 2.9s infinite linear, typing 0.4s 2.9s steps(25) 1 both;
 }
 
 header div.typing p:nth-of-type(4):after {
-  -webkit-animation: cursor 0.5s 3.2s infinite linear, typing 0.4s 3.2s steps(34) 1 both;
-          animation: cursor 0.5s 3.2s infinite linear, typing 0.4s 3.2s steps(34) 1 both;
+  -webkit-animation: cursor 0.5s 3.2s infinite linear, typing 0.4s 3.2s steps(32) 1 both;
+          animation: cursor 0.5s 3.2s infinite linear, typing 0.4s 3.2s steps(32) 1 both;
 }
 
 header div.typing p:nth-of-type(5):after {
@@ -942,7 +942,7 @@ header div.typing .colorRed {
     }
   }
   header div.typing {
-    margin: 12% 0 0 -10%;
+    margin: 12% 0 0 -12%;
   }
   header div.typing p {
     font-size: 13px;
@@ -1243,7 +1243,7 @@ header div.typing .colorRed {
 
 @media (max-width: 320px) {
   header section {
-    font-size: 19px;
+    font-size: 18px;
     bottom: 105%;
     left: 3%;
   }
@@ -1322,7 +1322,7 @@ header div.typing .colorRed {
     }
   }
   header div.typing {
-    margin: 12% 0 0 -10%;
+    margin: 12% 0 0 -14%;
   }
   header div.typing p {
     font-size: 11px;
@@ -1727,7 +1727,7 @@ header div.typing .colorRed {
   header section {
     font-size: 23px;
     bottom: 105%;
-    left: 35% 0;
+    left: 35%;
   }
   header section span.hey {
     font-size: 23px;
