@@ -1,0 +1,59 @@
+div.loading
+    opacity: 1
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #000
+    z-index: 50
+    overflow-y: hidden
+
+    h2
+        position: absolute
+        top: 40%
+        left: 0
+        // transform: translate(-50%,-50%)
+        color: #ddd
+        font-family: 'Press Start 2P', cursive
+        font-size: 2.9vw
+        width: 100%
+        text-align: center
+        transition: .5s
+
+    div.bgLoading
+        position: absolute
+        top: 55%
+        left: 50%
+        transform: translate(-50%,-50%)
+        height: 30px
+        width: 35%
+        background-color: #ddd
+        border-radius: 5px
+
+        div.progress
+            position: absolute
+            top: 20%
+            left: 1%
+            height: 18px
+            width: 0
+            background-color: royalblue
+            border-radius: 5px
+            animation: pLoading 3s forwards ease-out
+
+            @keyframes pLoading
+                0%
+                    width: 0%
+                100%
+                    width: 98%
+
+    @media (max-width: 800px)
+        h2
+            font-size: 24px
+            top: 42%
+        div.bgLoading
+            top: 50%
+            width: 280px
+            height: 20px
+            div.progress
+                height: 12px

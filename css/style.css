@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +38,7 @@
 div.callme {
   opacity: 0;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 div.callme.later {
@@ -49,6 +52,8 @@ div.callme.later {
   z-index: 8;
   overflow: hidden;
   background-color: rgba(200, 200, 200, 0.5);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 div.callme.later img {
@@ -57,22 +62,23 @@ div.callme.later img {
   transition: 0.5s;
 }
 
-div.callme.later:hover {
+div.callme.later.clickMe {
   width: 250px;
   height: 80px;
   border-radius: 45px;
-  background-color: rgba(33, 201, 0, 0.8);
+  background-color: #21c900;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
-div.callme.later:hover img {
+div.callme.later.clickMe img {
   -webkit-transform: translateY(-49%);
           transform: translateY(-49%);
 }
 
-div.callme.later:hover span {
+div.callme.later.clickMe span {
   opacity: 0;
+  pointer-events: none;
   display: inline-block;
   line-height: 80px;
   position: absolute;
@@ -284,7 +290,7 @@ header {
   width: 100%;
   background-color: #11121f;
   color: #d8d8d8;
-  font-family: 'consolas';
+  font-family: 'Inconsolata', monospace;
   height: 100vh;
   padding: 40px 0 0 40px;
   overflow: hidden;
@@ -296,8 +302,8 @@ header img.photo {
   bottom: 0%;
   height: 150vh;
   opacity: .8;
-  -webkit-animation: movePicture 1.5s forwards, resizePicture 10s 3s infinite alternate linear;
-          animation: movePicture 1.5s forwards, resizePicture 10s 3s infinite alternate linear;
+  -webkit-animation: movePicture 1.5s 4s forwards, resizePicture 10s 7s infinite alternate linear;
+          animation: movePicture 1.5s 4s forwards, resizePicture 10s 7s infinite alternate linear;
 }
 
 @-webkit-keyframes movePicture {
@@ -355,8 +361,8 @@ header section {
   position: absolute;
   bottom: 105%;
   left: 3%;
-  -webkit-animation: moveText 1.2s 1s ease-in forwards;
-          animation: moveText 1.2s 1s ease-in forwards;
+  -webkit-animation: moveText 1.2s 5s ease-in forwards;
+          animation: moveText 1.2s 5s ease-in forwards;
 }
 
 header section span.hey {
@@ -370,7 +376,7 @@ header section span.front {
 }
 
 header section span {
-  font-family: consolas, sans-serif;
+  font-family: 'Inconsolata', monospace;
   font-size: 65px;
   font-style: italic;
   -webkit-transition: 2s;
@@ -483,48 +489,48 @@ header div.typing p::after {
 }
 
 header div.typing p:nth-of-type(1):after {
-  -webkit-animation: cursor 0.5s 1.5s infinite linear, typing 0.7s 1.5s steps(51) 1 both;
-          animation: cursor 0.5s 1.5s infinite linear, typing 0.7s 1.5s steps(51) 1 both;
+  -webkit-animation: cursor 0.5s 5.5s infinite linear, typing 0.7s 5.5s steps(51) 1 both;
+          animation: cursor 0.5s 5.5s infinite linear, typing 0.7s 5.5s steps(51) 1 both;
 }
 
 header div.typing p:nth-of-type(2):after {
-  -webkit-animation: cursor 0.5s 2.2s infinite linear, typing 0.7s 2.2s steps(49) 1 both;
-          animation: cursor 0.5s 2.2s infinite linear, typing 0.7s 2.2s steps(49) 1 both;
+  -webkit-animation: cursor 0.5s 6.2s infinite linear, typing 0.7s 6.2s steps(49) 1 both;
+          animation: cursor 0.5s 6.2s infinite linear, typing 0.7s 6.2s steps(49) 1 both;
 }
 
 header div.typing p:nth-of-type(3):after {
-  -webkit-animation: cursor 0.5s 2.9s infinite linear, typing 0.4s 2.9s steps(25) 1 both;
-          animation: cursor 0.5s 2.9s infinite linear, typing 0.4s 2.9s steps(25) 1 both;
+  -webkit-animation: cursor 0.5s 6.9s infinite linear, typing 0.4s 6.9s steps(25) 1 both;
+          animation: cursor 0.5s 6.9s infinite linear, typing 0.4s 6.9s steps(25) 1 both;
 }
 
 header div.typing p:nth-of-type(4):after {
-  -webkit-animation: cursor 0.5s 3.2s infinite linear, typing 0.4s 3.2s steps(32) 1 both;
-          animation: cursor 0.5s 3.2s infinite linear, typing 0.4s 3.2s steps(32) 1 both;
+  -webkit-animation: cursor 0.5s 7.2s infinite linear, typing 0.4s 7.2s steps(32) 1 both;
+          animation: cursor 0.5s 7.2s infinite linear, typing 0.4s 7.2s steps(32) 1 both;
 }
 
 header div.typing p:nth-of-type(5):after {
-  -webkit-animation: cursor 0.5s 3.7s infinite linear, typing 0.2s 3.7s steps(20) 1 both;
-          animation: cursor 0.5s 3.7s infinite linear, typing 0.2s 3.7s steps(20) 1 both;
+  -webkit-animation: cursor 0.5s 7.7s infinite linear, typing 0.2s 7.7s steps(20) 1 both;
+          animation: cursor 0.5s 7.7s infinite linear, typing 0.2s 7.7s steps(20) 1 both;
 }
 
 header div.typing p:nth-of-type(6):after {
-  -webkit-animation: cursor 0.5s 3.9s infinite linear, typing 0.4s 3.9s steps(32) 1 both;
-          animation: cursor 0.5s 3.9s infinite linear, typing 0.4s 3.9s steps(32) 1 both;
+  -webkit-animation: cursor 0.5s 7.9s infinite linear, typing 0.4s 7.9s steps(32) 1 both;
+          animation: cursor 0.5s 7.9s infinite linear, typing 0.4s 7.9s steps(32) 1 both;
 }
 
 header div.typing p:nth-of-type(7):after {
-  -webkit-animation: cursor 0.5s 4.3s infinite linear, typing 0.4s 4.3s steps(30) 1 both;
-          animation: cursor 0.5s 4.3s infinite linear, typing 0.4s 4.3s steps(30) 1 both;
+  -webkit-animation: cursor 0.5s 8.3s infinite linear, typing 0.4s 8.3s steps(30) 1 both;
+          animation: cursor 0.5s 8.3s infinite linear, typing 0.4s 8.3s steps(30) 1 both;
 }
 
 header div.typing p:nth-of-type(8):after {
-  -webkit-animation: cursor 0.5s 4.7s infinite linear, typing 0.4s 4.7s steps(2) 1 both;
-          animation: cursor 0.5s 4.7s infinite linear, typing 0.4s 4.7s steps(2) 1 both;
+  -webkit-animation: cursor 0.5s 8.7s infinite linear, typing 0.4s 8.7s steps(2) 1 both;
+          animation: cursor 0.5s 8.7s infinite linear, typing 0.4s 8.7s steps(2) 1 both;
 }
 
 header div.typing p:nth-of-type(9):after {
-  -webkit-animation: cursor 0.5s 5.1s infinite linear, typing 0.15s 5.1s steps(10) 1 both;
-          animation: cursor 0.5s 5.1s infinite linear, typing 0.15s 5.1s steps(10) 1 both;
+  -webkit-animation: cursor 0.5s 9.1s infinite linear, typing 0.15s 9.1s steps(10) 1 both;
+          animation: cursor 0.5s 9.1s infinite linear, typing 0.15s 9.1s steps(10) 1 both;
 }
 
 header div.typing .space {
@@ -945,7 +951,7 @@ header div.typing .colorRed {
     margin: 12% 0 0 -12%;
   }
   header div.typing p {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     margin: 6px;
   }
@@ -1203,7 +1209,7 @@ header div.typing .colorRed {
     margin: 12% 0 0 -10%;
   }
   header div.typing p {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     margin: 6px;
   }
@@ -1325,7 +1331,7 @@ header div.typing .colorRed {
     margin: 12% 0 0 -14%;
   }
   header div.typing p {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
     margin: 6px;
   }
@@ -1447,7 +1453,7 @@ header div.typing .colorRed {
     margin: 12% 0 0 -10%;
   }
   header div.typing p {
-    font-size: 9px;
+    font-size: 8px;
     font-weight: bold;
     margin: 6px;
   }
@@ -3178,28 +3184,28 @@ main div.github1 .container8 .card8 .info h4 {
 
 @media (max-width: 360px) and (orientation: portrait) {
   main div.html1 .container1 .card1 .html {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   main div.css1 .container2 .card2 .css {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   main div.js1 .container3 .card3 .js {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   main div.react1 .container4 .card4 .react {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   main div.jquery1 .container5 .card5 .jquery {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   main div.sass1 .container6 .card6 .sass {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   main div.python1 .container7 .card7 .python {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   main div.github1 .container8 .card8 .github {
-    min-height: 50vh;
+    min-height: 40vh;
   }
 }
 
@@ -3592,6 +3598,7 @@ article.about p.animate4 {
   article.about p {
     font-size: 1.3rem;
     width: 100%;
+    opacity: 1;
   }
 }
 
@@ -3770,7 +3777,7 @@ div.youtube div.video.animate6 div.small iframe {
 
 @media (max-width: 414px) {
   div.youtube div.preYt h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 3%;
   }
 }
@@ -3988,6 +3995,7 @@ article.about2 p.animate7 {
   article.about2 h2 {
     margin-top: 5%;
     font-size: 3rem;
+    opacity: 1;
   }
   article.about2 div.bgc2 {
     left: -20%;
@@ -3996,12 +4004,13 @@ article.about2 p.animate7 {
   article.about2 p {
     font-size: 1.3rem;
     width: 100%;
+    opacity: 1;
   }
 }
 
 @media (max-width: 414px) {
   article.about2 h2 {
-    margin-top: 25%;
+    margin-top: 0;
     font-size: 2rem;
   }
   article.about2 h2.animate7 {
@@ -4058,6 +4067,9 @@ article.gallery div.photo div.reSize img.foto1 {
   width: 100%;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+article.gallery div.photo div.reSize img.foto1.opacity {
   -webkit-animation: color 4s linear infinite;
           animation: color 4s linear infinite;
 }
@@ -4148,89 +4160,12 @@ article.gallery div.photo div.selector div {
   background-color: rgba(150, 150, 150, 0.7);
   border-radius: 50%;
   opacity: 0.7;
+  cursor: pointer;
 }
 
-article.gallery div.photo div.selector div.first {
-  -webkit-animation: point 20s forwards infinite;
-          animation: point 20s forwards infinite;
-}
-
-article.gallery div.photo div.selector div.second {
-  -webkit-animation: point 20s 4s forwards infinite;
-          animation: point 20s 4s forwards infinite;
-}
-
-article.gallery div.photo div.selector div.third {
-  -webkit-animation: point 20s 8s forwards infinite;
-          animation: point 20s 8s forwards infinite;
-}
-
-article.gallery div.photo div.selector div.fourth {
-  -webkit-animation: point 20s 12s forwards infinite;
-          animation: point 20s 12s forwards infinite;
-}
-
-article.gallery div.photo div.selector div.fifth {
-  -webkit-animation: point 20s 16s forwards infinite;
-          animation: point 20s 16s forwards infinite;
-}
-
-@-webkit-keyframes point {
-  0% {
-    background-color: rgba(150, 150, 150, 0.7);
-    border: none;
-  }
-  1% {
-    background-color: rgba(150, 150, 150, 0.7);
-    border: none;
-  }
-  2% {
-    background-color: #323232;
-    border: 0.2rem solid rgba(150, 150, 150, 0.7);
-  }
-  18% {
-    background-color: #323232;
-    border: 0.2rem solid rgba(150, 150, 150, 0.7);
-  }
-  19% {
-    background-color: rgba(150, 150, 150, 0.7);
-  }
-  20% {
-    background-color: rgba(150, 150, 150, 0.7);
-    border: none;
-  }
-  100% {
-    background-color: rgba(150, 150, 150, 0.7);
-  }
-}
-
-@keyframes point {
-  0% {
-    background-color: rgba(150, 150, 150, 0.7);
-    border: none;
-  }
-  1% {
-    background-color: rgba(150, 150, 150, 0.7);
-    border: none;
-  }
-  2% {
-    background-color: #323232;
-    border: 0.2rem solid rgba(150, 150, 150, 0.7);
-  }
-  18% {
-    background-color: #323232;
-    border: 0.2rem solid rgba(150, 150, 150, 0.7);
-  }
-  19% {
-    background-color: rgba(150, 150, 150, 0.7);
-  }
-  20% {
-    background-color: rgba(150, 150, 150, 0.7);
-    border: none;
-  }
-  100% {
-    background-color: rgba(150, 150, 150, 0.7);
-  }
+article.gallery div.photo div.selector div.activeColor {
+  background-color: #323232;
+  border: 0.3rem solid rgba(150, 150, 150, 0.7);
 }
 
 article.gallery h4 {
@@ -4340,8 +4275,15 @@ article.gallery div.cursor img {
     width: 90%;
     padding: 5% 0 0 0;
   }
+  article.gallery div.photo div.selector div {
+    width: 1rem;
+    height: 1rem;
+  }
+  article.gallery div.photo div.selector div.activeColor {
+    border: 0.2rem solid rgba(150, 150, 150, 0.7);
+  }
   article.gallery h4 {
-    padding: 9% 6% 2% 6%;
+    padding: 15% 6% 15% 6%;
     font-size: 1rem;
   }
 }
@@ -4455,12 +4397,26 @@ article.checkPhone h3.animate8 {
   }
 }
 
+@media (max-width: 450px) {
+  article.checkPhone h3 {
+    font-size: 1.4rem;
+  }
+  article.checkPhone div.mSite {
+    margin: 40% 5% 5% 5%;
+    float: none;
+    border-radius: 25% 25%;
+  }
+  article.checkPhone div.mSite img.iphone {
+    width: 100%;
+  }
+}
+
 @media (max-width: 360px) {
   article.checkPhone h3 {
     font-size: 1.2rem;
   }
   article.checkPhone div.mSite {
-    margin: 35% 5% 5% 5%;
+    margin: 40% 5% 5% 5%;
     float: none;
     border-radius: 25% 25%;
   }
@@ -4723,5 +4679,87 @@ footer p {
   padding: 0.5%;
   font-size: 1.3rem;
   text-align: center;
+}
+
+div.loading {
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  z-index: 50;
+  overflow-y: hidden;
+}
+
+div.loading h2 {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  color: #ddd;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.9vw;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+div.loading div.bgLoading {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 30px;
+  width: 35%;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+div.loading div.bgLoading div.progress {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  height: 18px;
+  width: 0;
+  background-color: royalblue;
+  border-radius: 5px;
+  -webkit-animation: pLoading 3s forwards ease-out;
+          animation: pLoading 3s forwards ease-out;
+}
+
+@-webkit-keyframes pLoading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 98%;
+  }
+}
+
+@keyframes pLoading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 98%;
+  }
+}
+
+@media (max-width: 800px) {
+  div.loading h2 {
+    font-size: 24px;
+    top: 42%;
+  }
+  div.loading div.bgLoading {
+    top: 50%;
+    width: 280px;
+    height: 20px;
+  }
+  div.loading div.bgLoading div.progress {
+    height: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

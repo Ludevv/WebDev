@@ -1,6 +1,4 @@
 
-
-
 div.youtube
     position: relative
     background-color: transparent
@@ -19,9 +17,7 @@ div.youtube
             letter-spacing: 3px
             opacity: 0
             text-transform: uppercase
-            font-family: 'Big Shoulders Stencil Display', cursive;
-
-
+            font-family: 'Big Shoulders Stencil Display', cursive
 
     div.video
         position: absolute
@@ -29,10 +25,6 @@ div.youtube
         right: 2vw
         transform: translateY(-50%)
         width: 60%
-
-
-
-
 
         div.small
             position: relative
@@ -50,17 +42,13 @@ div.youtube
                 width: 100%
                 opacity: 0
 
-            
-
-
     div.preYt.animate5
         animation: rig 2s forwards
         @keyframes rig
             0%
-                
+
             100%
                 width: 100%
-        
 
     div.preYt.animate6
         animation: rig 1s forwards, bot 1s forwards
@@ -70,7 +58,6 @@ div.youtube
         div.small
             iframe
                 animation: h3show 1s 1s forwards
-
 
     @keyframes bot
         0%
@@ -84,22 +71,11 @@ div.youtube
         100%
             opacity: 1
 
-
-
-
-    
-                
-
-
-
-
-    
     @media (max-width: 1300px)
-        
 
         animation: rig 1s forwards, bot 1s forwards
         div.preYt
-            
+
             h3
                 font-size: 5vw
                 text-align: center
@@ -109,7 +85,7 @@ div.youtube
             right: 50%
             transform: translateX(50%)
             width: 90%
-        
+
         @keyframes bot
             0%
                 height: 10%
@@ -119,6 +95,5 @@ div.youtube
     @media (max-width: 414px)
         div.preYt
             h3
-                font-size: 2rem
+                font-size: 1.8rem
                 padding: 3%
-

@@ -1,8 +1,8 @@
 div.callme
     opacity: 0
     border-radius: 40px
-    
-    
+    cursor: pointer
+
 div.callme.later
     opacity: 1
     display: block
@@ -14,8 +14,9 @@ div.callme.later
     z-index: 8
     overflow: hidden
     background-color: rgba(200, 200, 200, 0.5)
-    
-    
+
+    transition: 0.7s
+
     // border-radius: 50%
 
     img
@@ -25,23 +26,20 @@ div.callme.later
         // border-radius: 50%
 
     span
-        
 
-        
-
-
-div.callme.later:hover
+div.callme.later.clickMe
     width: 250px
     height: 80px
     border-radius: 45px
     // background-color: #21c900
-    background-color: rgba(33, 201,0 ,0.8)
+    background-color: rgba(33, 201,0 ,1)
     transition: 0.7s
     img
         // border-radius: 0
         transform: translateY(-49%)
     span
         opacity: 0
+        pointer-events: none
         display: inline-block
         line-height: 80px
         position: absolute
@@ -50,7 +48,7 @@ div.callme.later:hover
         transform: translateY(-50%)
         color: white
         font-weight: bold
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif
         font-size: 1.1rem
         padding-left: 2px
         animation: number 0.5s 0.5s forwards

@@ -5,7 +5,8 @@ header
     width: 100%
     background-color: #11121f
     color: rgb(216, 216, 216)
-    font-family: 'consolas'
+    // font-family: 'consolas'
+    font-family: 'Inconsolata', monospace
     height: 100vh
     padding: 40px 0 0 40px
     overflow: hidden
@@ -17,7 +18,8 @@ header
         height: 150vh
         // opacity: .3
         opacity: .8
-        animation: movePicture 1.5s forwards, resizePicture 10s 3s infinite alternate linear
+        // DODANIE 4s w 1 i +4 w 2 
+        animation: movePicture 1.5s 4s forwards, resizePicture 10s 7s infinite alternate linear
 
         @keyframes movePicture
             0%
@@ -42,7 +44,8 @@ header
         position: absolute
         bottom: 105%
         left: 3%
-        animation: moveText 1.2s 1s ease-in forwards
+        // dodanie 1 + 4 
+        animation: moveText 1.2s 5s ease-in forwards
 
         span.hey
             font-family: 'Covered By Your Grace', cursive
@@ -51,7 +54,7 @@ header
             font-family: 'Covered By Your Grace', cursive
             font-size: 80px
         span
-            font-family: consolas, sans-serif
+            font-family: 'Inconsolata', monospace
             font-size: 65px
             font-style: italic
             transition: 2s
@@ -113,23 +116,23 @@ header
         //         text-indent: 90px
 
         p:nth-of-type(1):after
-            animation: cursor .5s 1.5s infinite linear, typing .7s 1.5s steps(51) 1 both
+            animation: cursor .5s 5.5s infinite linear, typing .7s 5.5s steps(51) 1 both
         p:nth-of-type(2):after
-            animation: cursor .5s 2.2s infinite linear, typing .7s 2.2s steps(49) 1 both
+            animation: cursor .5s 6.2s infinite linear, typing .7s 6.2s steps(49) 1 both
         p:nth-of-type(3):after
-            animation: cursor .5s 2.9s infinite linear, typing .4s 2.9s steps(25) 1 both
+            animation: cursor .5s 6.9s infinite linear, typing .4s 6.9s steps(25) 1 both
         p:nth-of-type(4):after
-            animation: cursor .5s 3.2s infinite linear, typing .4s 3.2s steps(32) 1 both
+            animation: cursor .5s 7.2s infinite linear, typing .4s 7.2s steps(32) 1 both
         p:nth-of-type(5):after
-            animation: cursor .5s 3.7s infinite linear, typing .2s 3.7s steps(20) 1 both
+            animation: cursor .5s 7.7s infinite linear, typing .2s 7.7s steps(20) 1 both
         p:nth-of-type(6):after
-            animation: cursor .5s 3.9s infinite linear, typing .4s 3.9s steps(32) 1 both
+            animation: cursor .5s 7.9s infinite linear, typing .4s 7.9s steps(32) 1 both
         p:nth-of-type(7):after
-            animation: cursor .5s 4.3s infinite linear, typing .4s 4.3s steps(30) 1 both
+            animation: cursor .5s 8.3s infinite linear, typing .4s 8.3s steps(30) 1 both
         p:nth-of-type(8):after
-            animation: cursor .5s 4.7s infinite linear, typing .4s 4.7s steps(2) 1 both
+            animation: cursor .5s 8.7s infinite linear, typing .4s 8.7s steps(2) 1 both
         p:nth-of-type(9):after
-            animation: cursor .5s 5.1s infinite linear, typing .15s 5.1s steps(10) 1 both
+            animation: cursor .5s 9.1s infinite linear, typing .15s 9.1s steps(10) 1 both
 
         .space
             margin-bottom: 2%
@@ -367,7 +370,7 @@ header
         div.typing
             margin: 12% 0 0 -12%
             p
-                font-size: 13px
+                font-size: 12px
                 font-weight: bold
                 margin: 6px
 
@@ -497,7 +500,7 @@ header
         div.typing
             margin: 12% 0 0 -10%
             p
-                font-size: 11px
+                font-size: 10px
                 font-weight: bold
                 margin: 6px
 
@@ -557,7 +560,7 @@ header
         div.typing
             margin: 12% 0 0 -14%
             p
-                font-size: 11px
+                font-size: 10px
                 font-weight: bold
                 margin: 6px
 
@@ -617,7 +620,7 @@ header
         div.typing
             margin: 12% 0 0 -10%
             p
-                font-size: 9px
+                font-size: 8px
                 font-weight: bold
                 margin: 6px
 
