@@ -1,22 +1,3 @@
-// Dodanie zmiennych z moimi informacjami
-///////////////////////////////////////////////////////////////////////////////////
-let boxName = document.querySelector('.myName');
-let boxJob = document.querySelector('.myJob');
-
-const name = 'Piotr Ludew';
-const job = 'Front-End Developer';
-
-function welcome() {
-    boxName.textContent = name;
-    boxName.classList.add('showVariables');
-    boxJob.textContent = job;
-    boxJob.classList.add('showVariables');
-};
-
-function delay() {
-    setTimeout(welcome, 9700);
-};
-delay();
 
 
 //Menu hamburgerowe

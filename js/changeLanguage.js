@@ -2,8 +2,8 @@ const english = document.querySelector('.eng')
 const polish = document.querySelector('.pl')
 
 polish.addEventListener('click', function () {
-    document.querySelector('.hey').textContent = "Witaj! Nazywam się "
-    document.querySelector('.front').textContent = "i chcę pracować jako "
+    document.querySelector('.hey').textContent = "Witaj! Nazywam się Piotr Ludew"
+    document.querySelector('.front').textContent = "i chcę pracować jako Front-End Developer"
     document.querySelector('.textComing1').textContent = "Co"
     document.querySelector('.textComing2').textContent = "potrafię?"
     document.querySelector('.advanced1').textContent = "Poziom zaawansowania"
@@ -50,8 +50,8 @@ polish.addEventListener('click', function () {
 })
 
 english.addEventListener('click', function () {
-    document.querySelector('.hey').textContent = "Hi! My name is "
-    document.querySelector('.front').textContent = "I want to work as "
+    document.querySelector('.hey').textContent = "Hi! My name is Piotr Ludew"
+    document.querySelector('.front').textContent = "I want to work as Front-End Developer"
     document.querySelector('.textComing1').textContent = "My"
     document.querySelector('.textComing2').textContent = "abilities"
     document.querySelector('.advanced1').textContent = "Tech stack"

@@ -53,12 +53,14 @@ div.callme.later {
   overflow: hidden;
   background-color: rgba(200, 200, 200, 0.5);
   -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
   transition: 0.7s;
 }
 
 div.callme.later img {
   height: 200%;
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -68,11 +70,13 @@ div.callme.later.clickMe {
   border-radius: 45px;
   background-color: #21c900;
   -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
   transition: 0.7s;
 }
 
 div.callme.later.clickMe img {
   -webkit-transform: translateY(-49%);
+      -ms-transform: translateY(-49%);
           transform: translateY(-49%);
 }
 
@@ -85,6 +89,7 @@ div.callme.later.clickMe span {
   top: 50%;
   left: 31%;
   -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   color: white;
   font-weight: bold;
@@ -121,6 +126,7 @@ div.burger {
   font-size: 40px;
   color: #DAA520;
   -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
 }
 
@@ -157,6 +163,7 @@ aside {
   z-index: 5;
   background-color: rgba(100, 100, 100, 0.6);
   -webkit-transition: .7s;
+  -o-transition: .7s;
   transition: .7s;
 }
 
@@ -380,6 +387,7 @@ header section span {
   font-size: 65px;
   font-style: italic;
   -webkit-transition: 2s;
+  -o-transition: 2s;
   transition: 2s;
 }
 
@@ -1874,11 +1882,13 @@ div.preSkills section span.textComing1, div.preSkills section span.textComing2 {
 
 div.preSkills section span.textComing1 {
   -webkit-transform: translate(-500%, -50%);
+      -ms-transform: translate(-500%, -50%);
           transform: translate(-500%, -50%);
 }
 
 div.preSkills section span.textComing2 {
   -webkit-transform: translate(90%, -50%);
+      -ms-transform: translate(90%, -50%);
           transform: translate(90%, -50%);
 }
 
@@ -2022,6 +2032,7 @@ main div.html1 {
 
 main div.html1 .container1 .card1 {
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2049,6 +2060,7 @@ main div.html1 .container1 .card1 .html img {
   width: 80%;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2056,6 +2068,8 @@ main div.html1 .container1 .card1 .html .circle {
   width: 16rem;
   height: 16rem;
   background: -webkit-gradient(linear, left top, right top, from(#ff711fda), to(#c04600cc));
+  background: -webkit-linear-gradient(left, #ff711fda, #c04600cc);
+  background: -o-linear-gradient(left, #ff711fda, #c04600cc);
   background: linear-gradient(to right, #ff711fda, #c04600cc);
   position: absolute;
   border-radius: 50%;
@@ -2067,6 +2081,7 @@ main div.html1 .container1 .card1 .info h1 {
   text-align: center;
   color: #fc5c00cc;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2078,6 +2093,7 @@ main div.html1 .container1 .card1 .info h3 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2090,6 +2106,7 @@ main div.html1 .container1 .card1 .circles {
           justify-content: space-between;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2102,22 +2119,26 @@ main div.html1 .container1 .card1 .circles div {
 
 main div.html1 .container1 .card1 .circles div.one {
   -webkit-transition: 0.5s 0s;
+  -o-transition: 0.5s 0s;
   transition: 0.5s 0s;
 }
 
 main div.html1 .container1 .card1 .circles div.two {
   -webkit-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
   transition: 0.5s 0.5s;
 }
 
 main div.html1 .container1 .card1 .circles div.three {
   -webkit-transition: 0.5s 1s;
+  -o-transition: 0.5s 1s;
   transition: 0.5s 1s;
   color: #fff;
 }
 
 main div.html1 .container1 .card1 .circles div.four {
   -webkit-transition: 0.5s 1.5s;
+  -o-transition: 0.5s 1.5s;
   transition: 0.5s 1.5s;
 }
 
@@ -2147,6 +2168,7 @@ main div.html1 .container1 .card1 .info h4 {
   padding-bottom: 10px;
   color: #585858;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2158,6 +2180,7 @@ main div.css1 {
 
 main div.css1 .container2 .card2 {
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2185,6 +2208,7 @@ main div.css1 .container2 .card2 .css img {
   width: 80%;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2192,6 +2216,8 @@ main div.css1 .container2 .card2 .css .circle {
   width: 16rem;
   height: 16rem;
   background: -webkit-gradient(linear, left top, right top, from(#0d2e74cb), to(#2a9cfabf));
+  background: -webkit-linear-gradient(left, #0d2e74cb, #2a9cfabf);
+  background: -o-linear-gradient(left, #0d2e74cb, #2a9cfabf);
   background: linear-gradient(to right, #0d2e74cb, #2a9cfabf);
   position: absolute;
   border-radius: 50%;
@@ -2203,6 +2229,7 @@ main div.css1 .container2 .card2 .info h1 {
   text-align: center;
   color: #2a9cfabf;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2214,6 +2241,7 @@ main div.css1 .container2 .card2 .info h3 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2226,6 +2254,7 @@ main div.css1 .container2 .card2 .circles {
           justify-content: space-between;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2238,16 +2267,19 @@ main div.css1 .container2 .card2 .circles div {
 
 main div.css1 .container2 .card2 .circles div.one {
   -webkit-transition: 0.5s 0s;
+  -o-transition: 0.5s 0s;
   transition: 0.5s 0s;
 }
 
 main div.css1 .container2 .card2 .circles div.two {
   -webkit-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
   transition: 0.5s 0.5s;
 }
 
 main div.css1 .container2 .card2 .circles div.three {
   -webkit-transition: 0.5s 1s;
+  -o-transition: 0.5s 1s;
   transition: 0.5s 1s;
   color: #fff;
 }
@@ -2273,6 +2305,7 @@ main div.css1 .container2 .card2 .info h4 {
   padding-bottom: 10px;
   color: #585858;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2284,6 +2317,7 @@ main div.js1 {
 
 main div.js1 .container3 .card3 {
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2311,6 +2345,7 @@ main div.js1 .container3 .card3 .js img {
   width: 80%;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2318,6 +2353,8 @@ main div.js1 .container3 .card3 .js .circle {
   width: 16rem;
   height: 16rem;
   background: -webkit-gradient(linear, left top, right top, from(#f1ff32b9), to(#e0b700c4));
+  background: -webkit-linear-gradient(left, #f1ff32b9, #e0b700c4);
+  background: -o-linear-gradient(left, #f1ff32b9, #e0b700c4);
   background: linear-gradient(to right, #f1ff32b9, #e0b700c4);
   position: absolute;
   border-radius: 50%;
@@ -2331,6 +2368,7 @@ main div.js1 .container3 .card3 .info h1 {
   text-align: center;
   color: #b99803b6;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2342,6 +2380,7 @@ main div.js1 .container3 .card3 .info h3 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2354,6 +2393,7 @@ main div.js1 .container3 .card3 .circles {
           justify-content: space-between;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2366,11 +2406,13 @@ main div.js1 .container3 .card3 .circles div {
 
 main div.js1 .container3 .card3 .circles div.one {
   -webkit-transition: 0.5s 0s;
+  -o-transition: 0.5s 0s;
   transition: 0.5s 0s;
 }
 
 main div.js1 .container3 .card3 .circles div.two {
   -webkit-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
   transition: 0.5s 0.5s;
 }
 
@@ -2390,6 +2432,7 @@ main div.js1 .container3 .card3 .info h4 {
   padding-bottom: 10px;
   color: #585858;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2401,6 +2444,7 @@ main div.react1 {
 
 main div.react1 .container4 .card4 {
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2428,6 +2472,7 @@ main div.react1 .container4 .card4 .react img {
   width: 80%;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2435,6 +2480,8 @@ main div.react1 .container4 .card4 .react .circle {
   width: 16rem;
   height: 16rem;
   background: -webkit-gradient(linear, left top, right top, from(#adfcff9a), to(#2ee7ffa8));
+  background: -webkit-linear-gradient(left, #adfcff9a, #2ee7ffa8);
+  background: -o-linear-gradient(left, #adfcff9a, #2ee7ffa8);
   background: linear-gradient(to right, #adfcff9a, #2ee7ffa8);
   position: absolute;
   border-radius: 50%;
@@ -2448,6 +2495,7 @@ main div.react1 .container4 .card4 .info h1 {
   text-align: center;
   color: #61dafb;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2459,6 +2507,7 @@ main div.react1 .container4 .card4 .info h3 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2471,6 +2520,7 @@ main div.react1 .container4 .card4 .circles {
           justify-content: space-between;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2483,11 +2533,13 @@ main div.react1 .container4 .card4 .circles div {
 
 main div.react1 .container4 .card4 .circles div.one {
   -webkit-transition: 0.5s 0s;
+  -o-transition: 0.5s 0s;
   transition: 0.5s 0s;
 }
 
 main div.react1 .container4 .card4 .circles div.two {
   -webkit-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
   transition: 0.5s 0.5s;
 }
 
@@ -2507,6 +2559,7 @@ main div.react1 .container4 .card4 .info h4 {
   padding-bottom: 10px;
   color: #585858;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2518,6 +2571,7 @@ main div.jquery1 {
 
 main div.jquery1 .container5 .card5 {
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2545,6 +2599,7 @@ main div.jquery1 .container5 .card5 .jquery img {
   width: 80%;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2552,6 +2607,8 @@ main div.jquery1 .container5 .card5 .jquery .circle {
   width: 16rem;
   height: 16rem;
   background: -webkit-gradient(linear, left top, right top, from(#4880f898), to(#00218d9a));
+  background: -webkit-linear-gradient(left, #4880f898, #00218d9a);
+  background: -o-linear-gradient(left, #4880f898, #00218d9a);
   background: linear-gradient(to right, #4880f898, #00218d9a);
   position: absolute;
   border-radius: 50%;
@@ -2565,6 +2622,7 @@ main div.jquery1 .container5 .card5 .info h1 {
   text-align: center;
   color: #1169ae;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2576,6 +2634,7 @@ main div.jquery1 .container5 .card5 .info h3 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2588,6 +2647,7 @@ main div.jquery1 .container5 .card5 .circles {
           justify-content: space-between;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2600,22 +2660,26 @@ main div.jquery1 .container5 .card5 .circles div {
 
 main div.jquery1 .container5 .card5 .circles div.one {
   -webkit-transition: 0.5s 0s;
+  -o-transition: 0.5s 0s;
   transition: 0.5s 0s;
 }
 
 main div.jquery1 .container5 .card5 .circles div.two {
   -webkit-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
   transition: 0.5s 0.5s;
 }
 
 main div.jquery1 .container5 .card5 .circles div.three {
   -webkit-transition: 0.5s 1s;
+  -o-transition: 0.5s 1s;
   transition: 0.5s 1s;
   color: #fff;
 }
 
 main div.jquery1 .container5 .card5 .circles div.four {
   -webkit-transition: 0.5s 1.5s;
+  -o-transition: 0.5s 1.5s;
   transition: 0.5s 1.5s;
 }
 
@@ -2640,6 +2704,7 @@ main div.jquery1 .container5 .card5 .info h4 {
   padding-bottom: 10px;
   color: #585858;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2651,6 +2716,7 @@ main div.sass1 {
 
 main div.sass1 .container6 .card6 {
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2678,6 +2744,7 @@ main div.sass1 .container6 .card6 .sass img {
   width: 100%;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2685,6 +2752,8 @@ main div.sass1 .container6 .card6 .sass .circle {
   width: 16rem;
   height: 16rem;
   background: -webkit-gradient(linear, left top, right top, from(#fa96c6), to(#b77dc9b0));
+  background: -webkit-linear-gradient(left, #fa96c6, #b77dc9b0);
+  background: -o-linear-gradient(left, #fa96c6, #b77dc9b0);
   background: linear-gradient(to right, #fa96c6, #b77dc9b0);
   position: absolute;
   border-radius: 50%;
@@ -2698,6 +2767,7 @@ main div.sass1 .container6 .card6 .info h1 {
   text-align: center;
   color: #cd6799;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2709,6 +2779,7 @@ main div.sass1 .container6 .card6 .info h3 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2721,6 +2792,7 @@ main div.sass1 .container6 .card6 .circles {
           justify-content: space-between;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2733,22 +2805,26 @@ main div.sass1 .container6 .card6 .circles div {
 
 main div.sass1 .container6 .card6 .circles div.one {
   -webkit-transition: 0.5s 0s;
+  -o-transition: 0.5s 0s;
   transition: 0.5s 0s;
 }
 
 main div.sass1 .container6 .card6 .circles div.two {
   -webkit-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
   transition: 0.5s 0.5s;
 }
 
 main div.sass1 .container6 .card6 .circles div.three {
   -webkit-transition: 0.5s 1s;
+  -o-transition: 0.5s 1s;
   transition: 0.5s 1s;
   color: #fff;
 }
 
 main div.sass1 .container6 .card6 .circles div.four {
   -webkit-transition: 0.5s 1.5s;
+  -o-transition: 0.5s 1.5s;
   transition: 0.5s 1.5s;
 }
 
@@ -2778,6 +2854,7 @@ main div.sass1 .container6 .card6 .info h4 {
   padding-bottom: 10px;
   color: #585858;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2789,6 +2866,7 @@ main div.python1 {
 
 main div.python1 .container7 .card7 {
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2816,6 +2894,7 @@ main div.python1 .container7 .card7 .python img {
   width: 80%;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2823,6 +2902,8 @@ main div.python1 .container7 .card7 .python .circle {
   width: 16rem;
   height: 16rem;
   background: -webkit-gradient(linear, left top, right top, from(#0076fdd0), to(#ffd900cb));
+  background: -webkit-linear-gradient(left, #0076fdd0, #ffd900cb);
+  background: -o-linear-gradient(left, #0076fdd0, #ffd900cb);
   background: linear-gradient(to right, #0076fdd0, #ffd900cb);
   position: absolute;
   border-radius: 50%;
@@ -2836,6 +2917,7 @@ main div.python1 .container7 .card7 .info h1 {
   text-align: center;
   color: #3571a3;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2847,6 +2929,7 @@ main div.python1 .container7 .card7 .info h3 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2859,6 +2942,7 @@ main div.python1 .container7 .card7 .circles {
           justify-content: space-between;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2871,11 +2955,13 @@ main div.python1 .container7 .card7 .circles div {
 
 main div.python1 .container7 .card7 .circles div.one {
   -webkit-transition: 0.5s 0s;
+  -o-transition: 0.5s 0s;
   transition: 0.5s 0s;
 }
 
 main div.python1 .container7 .card7 .circles div.two {
   -webkit-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
   transition: 0.5s 0.5s;
 }
 
@@ -2895,6 +2981,7 @@ main div.python1 .container7 .card7 .info h4 {
   padding-bottom: 10px;
   color: #585858;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2906,6 +2993,7 @@ main div.github1 {
 
 main div.github1 .container8 .card8 {
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -2933,6 +3021,7 @@ main div.github1 .container8 .card8 .github img {
   width: 100%;
   z-index: 2;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2940,6 +3029,8 @@ main div.github1 .container8 .card8 .github .circle {
   width: 16rem;
   height: 16rem;
   background: -webkit-gradient(linear, left top, right top, from(#868686b6), to(#242424d5));
+  background: -webkit-linear-gradient(left, #868686b6, #242424d5);
+  background: -o-linear-gradient(left, #868686b6, #242424d5);
   background: linear-gradient(to right, #868686b6, #242424d5);
   position: absolute;
   border-radius: 50%;
@@ -2953,6 +3044,7 @@ main div.github1 .container8 .card8 .info h1 {
   text-align: center;
   color: #000;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2964,6 +3056,7 @@ main div.github1 .container8 .card8 .info h3 {
   text-align: center;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2976,6 +3069,7 @@ main div.github1 .container8 .card8 .circles {
           justify-content: space-between;
   margin-bottom: 2rem;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -2988,16 +3082,19 @@ main div.github1 .container8 .card8 .circles div {
 
 main div.github1 .container8 .card8 .circles div.one {
   -webkit-transition: 0.5s 0s;
+  -o-transition: 0.5s 0s;
   transition: 0.5s 0s;
 }
 
 main div.github1 .container8 .card8 .circles div.two {
   -webkit-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
   transition: 0.5s 0.5s;
 }
 
 main div.github1 .container8 .card8 .circles div.three {
   -webkit-transition: 0.5s 1s;
+  -o-transition: 0.5s 1s;
   transition: 0.5s 1s;
   color: #fff;
 }
@@ -3023,6 +3120,7 @@ main div.github1 .container8 .card8 .info h4 {
   padding-bottom: 10px;
   color: #585858;
   -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -3646,6 +3744,7 @@ div.youtube div.video {
   top: 50%;
   right: 2vw;
   -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 60%;
 }
@@ -3754,6 +3853,7 @@ div.youtube div.video.animate6 div.small iframe {
     top: 17%;
     right: 50%;
     -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
             transform: translateX(50%);
     width: 90%;
   }
@@ -4038,6 +4138,7 @@ article.gallery {
   background-color: #6e7689;
   position: relative;
   -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   overflow: hidden;
 }
@@ -4066,6 +4167,7 @@ article.gallery div.photo div.reSize {
 article.gallery div.photo div.reSize img.foto1 {
   width: 100%;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -4118,6 +4220,7 @@ article.gallery div.photo div.reSize img.foto1.opacity {
 
 article.gallery div.photo div.reSize img.foto1:hover {
   -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
           transform: scale(1.15);
   -webkit-filter: blur(1px);
           filter: blur(1px);
@@ -4144,6 +4247,7 @@ article.gallery div.photo div.selector {
   bottom: -8%;
   left: 48%;
   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 40%;
   display: -webkit-box;
@@ -4234,6 +4338,7 @@ article.gallery div.cursor img {
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 60%;
     padding: 5% 0 0 0;
@@ -4252,6 +4357,7 @@ article.gallery div.cursor img {
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 70%;
     padding: 5% 0 0 0;
@@ -4271,6 +4377,7 @@ article.gallery div.cursor img {
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 90%;
     padding: 5% 0 0 0;
@@ -4313,6 +4420,7 @@ article.checkPhone h3 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   left: -50%;
   width: 50%;
@@ -4322,6 +4430,7 @@ article.checkPhone h3 {
   text-transform: none;
   letter-spacing: 1px;
   -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
@@ -4334,6 +4443,7 @@ article.checkPhone h3.animate8 {
     top: -15%;
     left: 50%;
     -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 100%;
     text-align: center;
@@ -4343,6 +4453,7 @@ article.checkPhone h3.animate8 {
     top: -15%;
     left: 50%;
     -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     padding: 0;
   }
@@ -4361,6 +4472,7 @@ article.checkPhone h3.animate8 {
     top: -15%;
     left: 50%;
     -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 100%;
     padding: 0;
@@ -4370,6 +4482,7 @@ article.checkPhone h3.animate8 {
     top: -15%;
     left: 50%;
     -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     padding: 0;
   }
@@ -4477,7 +4590,6 @@ article.checkPhone h3.animate8 {
 
 .fix div.block .socials {
   font-family: 'Poppins', sans-serif;
-  color: white;
   margin-top: 20px;
 }
 
@@ -4489,6 +4601,7 @@ article.checkPhone h3.animate8 {
   font-size: 4rem;
   float: left;
   margin: 0;
+  color: white;
 }
 
 .fix div.block .socials .social i.fa-mobile {
@@ -4508,6 +4621,7 @@ article.checkPhone h3.animate8 {
   padding-left: 20px;
   font-size: 0.8rem;
   float: left;
+  color: white;
 }
 
 @media (min-width: 360px) {
@@ -4645,26 +4759,31 @@ article.checkPhone h3.animate8 {
   }
   .fix div.block .socials .social i {
     -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
   }
   .fix div.block .socials .social:nth-of-type(1) i:hover {
     color: #21c900;
     -webkit-transform: translateY(-10%);
+        -ms-transform: translateY(-10%);
             transform: translateY(-10%);
   }
   .fix div.block .socials .social:nth-of-type(2) i:hover {
     color: #DAA520;
     -webkit-transform: translateY(-10%);
+        -ms-transform: translateY(-10%);
             transform: translateY(-10%);
   }
   .fix div.block .socials .social:nth-of-type(3) i:hover {
     color: #12298f;
     -webkit-transform: translateY(-10%);
+        -ms-transform: translateY(-10%);
             transform: translateY(-10%);
   }
   .fix div.block .socials .social:nth-of-type(4) i:hover {
     color: #0d83f1;
     -webkit-transform: translateY(-10%);
+        -ms-transform: translateY(-10%);
             transform: translateY(-10%);
   }
 }
@@ -4703,6 +4822,7 @@ div.loading h2 {
   width: 100%;
   text-align: center;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -4711,6 +4831,7 @@ div.loading div.bgLoading {
   top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 30px;
   width: 35%;
